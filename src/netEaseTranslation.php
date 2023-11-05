@@ -124,7 +124,9 @@ class AumNetEaseTranslation {
             }
 
             if ($this->isValidLrcText($trans)) {
-                $resultLrc .= " 【{$trans}】";
+                // $resultLrc .= " 【{$trans}】";
+                $resultLrc .= "\n";
+                $resultLrc .= $tKey . $tTime;
             }
             $resultLrc .= "\n";
         }
