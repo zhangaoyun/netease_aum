@@ -35,7 +35,7 @@ jobs:
         run: python build.py -z
       - name: Create ChangeLog Text
         id: changelog_text
-        uses: loopwerk/tag-changelog@v1
+        uses: loopwerk/tag-changelog@v1.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           config_file: .github/scripts/tag-changelog-config.js
